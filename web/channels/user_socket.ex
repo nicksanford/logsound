@@ -3,6 +3,7 @@ defmodule Logsound.UserSocket do
 
   ## Channels
   # channel "rooms:*", Logsound.RoomChannel
+  channel "push:*", Logsound.PushChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
