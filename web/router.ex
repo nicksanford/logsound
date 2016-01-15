@@ -17,11 +17,11 @@ defmodule Logsound.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    get "/test", PageController, :test
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", Logsound do
-  #   pipe_through :api
-  # end
+  scope "/api/v1", Logsound do
+    pipe_through :api
+
+    post "/", EventController, :create
+  end
 end
