@@ -11,6 +11,7 @@ defmodule Logsound.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug Logsound.Auth
   end
 
   scope "/", Logsound do

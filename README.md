@@ -1,7 +1,6 @@
 # Logsound
 
 ## MVP
-  * Add authentication for API
   * Deploy to heroku
   * Find good sounds
   * Set up stand up cron jobs

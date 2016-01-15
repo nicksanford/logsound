@@ -27,3 +27,6 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+config :api,
+  key: "D0wp+SKKZsEP4jwbniDFB8uFjPknZDF4uSIHC7/whDyRbCqa+Jtc3CZjO+DMR60y"
