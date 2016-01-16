@@ -1,8 +1,7 @@
 # Logsound
 
 ## MVP
-  * Deploy to heroku
-  * Find good sounds
+  * Create instrument sounds in GarageBand
   * Set up stand up cron jobs
   * Set up recruitifi hooks
   

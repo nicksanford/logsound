@@ -1,10 +1,19 @@
-import 'phoenix_html'
-import socket from './socket';
+//import 'phoenix_html'
+import 'bootstrap-webpack';
+import { Socket } from './phoenix';
+//import socket from './socket';
 import React from 'react';
 import { render } from 'react-dom';
 import { Row, Col } from 'react-bootstrap';
 import _ from 'lodash';
 import Howler from 'howler';
+let socket = new Socket('/socket', {
+  params: {token: window.userToken},
+  logger: (kind, msg, data) => {
+    console.log(`${kind}: ${msg}`, data)
+  }
+})
+
 let video_id = null;
 let mountPoint = document.getElementById('react');
 let pong = new Howler.Howl({urls: ['http://www.javascriptoo.com/application/html/pong.wav']})
@@ -52,7 +61,7 @@ const App = class App extends React.Component {
     return(
       <div className='container'>
         <Row>
-          <Col xs={12}>
+          <Col xs={12} className='text-center'>
             {this.video()}
           </Col>
         </Row>
