@@ -6,10 +6,9 @@ module.exports = {
   entry: {
     "app": ["./web/static/css/app.scss", "./web/static/js/app.jsx"],
   },
-
   output: {
-    path: "./priv/static",
-    filename: "js/app.js"
+    path: "./priv/static/js",
+    filename: "app.js"
   },
   module: {
     loaders: [
