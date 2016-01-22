@@ -29,4 +29,4 @@ config :phoenix, :generators,
   binary_id: false
 
 config :api,
-  key: "D0wp+SKKZsEP4jwbniDFB8uFjPknZDF4uSIHC7/whDyRbCqa+Jtc3CZjO+DMR60y"
+  key: System.get_env("API_KEY") || "D0wp+SKKZsEP4jwbniDFB8uFjPknZDF4uSIHC7/whDyRbCqa+Jtc3CZjO+DMR60y"

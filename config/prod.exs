@@ -68,6 +68,3 @@ config :logsound, Logsound.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
   pool_size: 20
-
-config :api,
-  key: System.get_env("API_KEY")
