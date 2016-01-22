@@ -1,0 +1,2 @@
+node_modules/.bin/webpack -C webpack.config.js
+mix phoenix.digest

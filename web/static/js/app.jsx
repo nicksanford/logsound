@@ -48,7 +48,7 @@ const App = class App extends React.Component {
 
   video() {
     if (this.props.video_id) {
-      let src = `http://www.youtube.com/embed/${this.props.video_id}?enablejsapi=1&origin=${location.href}&autoplay=1&rel=0`;
+      let src = `https://www.youtube.com/embed/${this.props.video_id}?enablejsapi=1&origin=${location.href}&autoplay=1&rel=0`;
       return(
         <iframe id="video" type="text/html" width="640" height="390" src={src} frameBorder="0"></iframe>
       );
