@@ -4,7 +4,7 @@ var CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = {
   devtool: "source-map",
   entry: {
-    "app": ["./web/static/css/app.scss", "./web/static/js/app.jsx"],
+    "app": ["./web/static/css/app.scss", "./web/static/js/index.js"],
   },
   output: {
     path: "./priv/static/js",
